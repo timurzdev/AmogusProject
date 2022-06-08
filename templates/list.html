@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>LIST</title>
+</head>
+<body>
+	<table border="1">
+		<thead>
+			<td>UserID</td>
+			<td>UserName</td>
+		</thead>
+
+		{% for row in rows %}
+			<tr>
+				<td>{{row["userid"]}}</td>
+				<td>{{row["username"]}}</td>
+			</tr>
+		{% endfor %}
+
+	</table>
+
+   <a href="/login">LOGIN</a>
+   <a href="/list">LIST</a>
+</body>
+</html>
